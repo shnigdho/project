@@ -1,0 +1,299 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@import 'swiper/css';
+@import 'swiper/css/effect-fade';
+
+:root {
+  --color-primary: #0A2463;
+  --color-primary-light: rgba(10, 36, 99, 0.1);
+  --color-secondary: #3E92CC;
+  --color-accent: #E84855;
+  --color-light: #F8F9FA;
+  --color-dark: #1A1A2E;
+  --color-gray: #D8E1E9;
+}
+
+
+/* Swiper Custom Styles */
+.swiper-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+.swiper-slide {
+  overflow: hidden;
+  position: relative;
+}
+
+.swiper-slide img {
+  transform: scale(1.1);
+  transition: transform 8s ease-out;
+}
+
+.swiper-slide-active img {
+  transform: scale(1);
+}
+
+
+/* In your main.css */
+.swiper-container {
+  z-index: 10; /* Lower than header's z-50 */
+}
+
+.hero-section .container {
+  z-index: 20; /* Higher than swiper-container */
+}
+
+
+
+/* Add to main.css */
+.swiper-slide img {
+  transform: scale(1.1);
+  transition: transform 8s ease-out;
+}
+
+.swiper-slide-active img {
+  transform: scale(1);
+}
+
+.swiper-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+
+
+
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 1.2;
+}
+
+/* Header Styles */
+#header {
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+#header.scrolled {
+  background-color: var(--color-primary);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+/* Hero Slider Styles */
+.hero-slider {
+  height: 100vh;
+  position: relative;
+}
+
+.hero-slider .swiper-slide {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-slider .slide-content {
+  position: relative;
+  z-index: 2;
+}
+
+.hero-slider .slide-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero-slider .slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(10, 36, 99, 0.8), rgba(62, 146, 204, 0.8));
+}
+
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.hero-slider .swiper-button-next:hover,
+.hero-slider .swiper-button-prev:hover {
+  transform: scale(1.1);
+}
+
+.hero-slider .swiper-pagination-bullet {
+  background: white;
+  opacity: 0.5;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+  opacity: 1;
+}
+
+/* Button Styles */
+.btn-primary {
+  @apply px-5 py-3 bg-accent text-white font-medium rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block transform hover:scale-105;
+}
+
+.btn-secondary {
+  @apply px-5 py-3 bg-white text-primary font-medium rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block transform hover:scale-105;
+}
+
+.btn-white {
+  @apply px-5 py-3 bg-white text-primary font-medium rounded-md hover:bg-opacity-90 transition-all duration-300 inline-block transform hover:scale-105;
+}
+
+.btn-outline-white {
+  @apply px-5 py-3 bg-transparent text-white border border-white font-medium rounded-md hover:bg-white hover:text-primary transition-all duration-300 inline-block transform hover:scale-105;
+}
+
+/* Card Styles */
+.card {
+  @apply bg-white rounded-lg shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+}
+
+/* Blog Card Styles */
+.blog-card {
+  @apply bg-white rounded-lg shadow-sm overflow-hidden transition-all duration-300 hover:shadow-lg;
+}
+
+.blog-card img {
+  @apply w-full h-48 object-cover transition-transform duration-300;
+}
+
+.blog-card:hover img {
+  @apply transform scale-105;
+}
+
+/* Service Card Styles */
+.service-card {
+  @apply bg-white rounded-lg p-6 shadow-sm hover:shadow-lg transition-all duration-300 transform hover:-translate-y-1;
+}
+
+.service-icon {
+  @apply w-16 h-16 rounded-full bg-primary-light flex items-center justify-center mb-4;
+}
+
+/* Animation Classes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 80vh;
+  }
+  
+  .hero-slider .slide-content {
+    padding: 0 1rem;
+  }
+}
+
+/* Custom Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Timeline Styles */
+.timeline-item {
+  @apply relative pb-8;
+}
+
+.timeline-item:last-child {
+  @apply pb-0;
+}
+
+.timeline-dot {
+  @apply absolute left-1/2 top-6 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full z-20;
+}
+
+.timeline-content {
+  @apply w-[calc(50%-20px)] ml-auto;
+}
+
+.timeline-item:nth-child(odd) .timeline-content {
+  @apply mr-auto ml-0;
+}
+
+/* Custom Colors */
+.bg-primary {
+  background-color: var(--color-primary);
+}
+
+.bg-primary-light {
+  background-color: var(--color-primary-light);
+}
+
+.bg-secondary {
+  background-color: var(--color-secondary);
+}
+
+.bg-accent {
+  background-color: var(--color-accent);
+}
+
+.bg-light {
+  background-color: var(--color-light);
+}
+
+.bg-dark {
+  background-color: var(--color-dark);
+}
+
+.text-primary {
+  color: var(--color-primary);
+}
+
+.text-secondary {
+  color: var(--color-secondary);
+}
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .timeline-dot {
+    @apply left-0 transform-none;
+  }
+  
+  .timeline-content {
+    @apply w-[calc(100%-30px)] ml-[30px];
+  }
+  
+  .timeline-item:nth-child(odd) .timeline-content {
+    @apply ml-[30px];
+  }
+}

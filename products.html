@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | SecureCard Technologies</title>
+  <meta name="description" content="Explore our range of smart card products including banking cards, SIM cards, NFC cards, RFID cards, and more.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="./src/styles/main.css" rel="stylesheet">
+</head>
+<body>
+  <header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="flex items-center">
+        <span class="text-2xl font-bold text-white">SecureCard<span class="text-accent">Tech</span></span>
+      </a>
+      
+      <div class="hidden md:flex space-x-6 items-center">
+        <nav class="flex space-x-6">
+          <a href="index.html" class="text-white hover:text-accent transition-colors font-medium">Home</a>
+          <a href="about.html" class="text-white hover:text-accent transition-colors font-medium">About Us</a>
+          <a href="products.html" class="text-white hover:text-accent transition-colors font-medium">Products</a>
+          <a href="services.html" class="text-white hover:text-accent transition-colors font-medium">Services</a>
+          <a href="blog.html" class="text-white hover:text-accent transition-colors font-medium">Blog</a>
+          <a href="contact.html" class="text-white hover:text-accent transition-colors font-medium">Contact</a>
+        </nav>
+        <a href="contact.html" class="btn-primary">Get a Quote</a>
+      </div>
+      
+      <button id="mobile-menu-button" class="md:hidden text-white">
+        <i class="fas fa-bars text-2xl"></i>
+      </button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden md:hidden bg-primary w-full absolute top-full left-0 py-4 shadow-lg">
+      <nav class="container mx-auto px-4 flex flex-col space-y-4">
+        <a href="index.html" class="text-white hover:text-accent transition-colors font-medium py-2">Home</a>
+        <a href="about.html" class="text-white hover:text-accent transition-colors font-medium py-2">About Us</a>
+        <a href="products.html" class="text-white hover:text-accent transition-colors font-medium py-2">Products</a>
+        <a href="services.html" class="text-white hover:text-accent transition-colors font-medium py-2">Services</a>
+        <a href="blog.html" class="text-white hover:text-accent transition-colors font-medium py-2">Blog</a>
+        <a href="contact.html" class="text-white hover:text-accent transition-colors font-medium py-2">Contact</a>
+        <a href="contact.html" class="btn-primary inline-block w-fit">Get a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="page-header bg-gradient-to-r from-primary to-secondary relative pt-32 pb-20">
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-3xl">
+          <h1 class="text-white text-4xl md:text-5xl font-bold mb-4" data-aos="fade-up">Our Products</h1>
+          <p class="text-white text-lg" data-aos="fade-up" data-aos-delay="100">Explore our comprehensive range of smart card solutions designed with cutting-edge technology and advanced security features.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Categories -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Smart Card Solutions</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">We offer a wide range of smart card products to meet the diverse needs of various industries and applications.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Category 1 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="150">
+            <a href="#banking-cards" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/6747094/pexels-photo-6747094.jpeg" alt="Banking Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Banking & Payment Cards</h3>
+                    <p class="text-gray-200">Secure EMV and contactless cards for financial transactions</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Category 2 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="200">
+            <a href="#sim-cards" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/4046634/pexels-photo-4046634.jpeg" alt="SIM Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">SIM & eSIM Cards</h3>
+                    <p class="text-gray-200">Advanced telecommunications cards with enhanced security</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Category 3 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="250">
+            <a href="#nfc-rfid" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/4386431/pexels-photo-4386431.jpeg" alt="NFC & RFID Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">NFC & RFID Cards</h3>
+                    <p class="text-gray-200">Contactless solutions for access control and identification</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Category 4 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="300">
+            <a href="#id-cards" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg" alt="ID Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">ID & Access Cards</h3>
+                    <p class="text-gray-200">Secure identification and access control solutions</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Category 5 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="350">
+            <a href="#loyalty-cards" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/5699516/pexels-photo-5699516.jpeg" alt="Loyalty Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Loyalty & Gift Cards</h3>
+                    <p class="text-gray-200">Customer engagement and promotional card solutions</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          
+          <!-- Category 6 -->
+          <div class="group" data-aos="fade-up" data-aos-delay="400">
+            <a href="#healthcare-cards" class="block">
+              <div class="relative overflow-hidden rounded-lg">
+                <img src="https://images.pexels.com/photos/4021779/pexels-photo-4021779.jpeg" alt="Healthcare Cards" class="w-full h-64 object-cover group-hover:scale-105 transition-transform duration-300">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-black/0 flex items-end">
+                  <div class="p-6">
+                    <h3 class="text-white text-xl font-bold mb-2">Healthcare Cards</h3>
+                    <p class="text-gray-200">Secure medical data and health insurance card solutions</p>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Banking Cards Section -->
+    <section id="banking-cards" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <span class="text-primary font-medium mb-2 block">FINANCIAL SOLUTIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Banking & Payment Cards</h2>
+            <p class="text-gray-600 mb-6">Our banking and payment card solutions offer state-of-the-art security features and innovative technology to protect financial transactions and enhance user experience.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">EMV Chip Cards</h3>
+                <p class="text-gray-600">Contact and contactless EMV cards with advanced encryption for secure transactions.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> DDA/CDA security</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Multiple application support</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Compatible with all major networks</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Contactless Payment Cards</h3>
+                <p class="text-gray-600">NFC-enabled cards for quick and secure tap-and-go transactions.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Fast transaction processing</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Enhanced user experience</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> EMV-compliant security</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Biometric Payment Cards</h3>
+                <p class="text-gray-600">Next-generation cards with built-in fingerprint sensors for enhanced security.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Fingerprint authentication</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Enhanced fraud protection</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> No battery required</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+          
+          <div class="relative" data-aos="fade-left">
+            <img src="https://images.pexels.com/photos/164501/pexels-photo-164501.jpeg" alt="Banking Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-shield-alt text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">PCI-DSS Compliant</p>
+                  <p class="text-sm text-gray-600">Highest Security Standards</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SIM Cards Section -->
+    <section id="sim-cards" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 relative" data-aos="fade-right">
+            <img src="https://images.pexels.com/photos/4046769/pexels-photo-4046769.jpeg" alt="SIM Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-microchip text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">Advanced Security</p>
+                  <p class="text-sm text-gray-600">Tamper-Resistant Technology</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-1 lg:order-2" data-aos="fade-left">
+            <span class="text-primary font-medium mb-2 block">TELECOMMUNICATIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">SIM & eSIM Cards</h2>
+            <p class="text-gray-600 mb-6">Our SIM card solutions provide secure subscriber identity management for telecommunications providers, with options ranging from traditional SIM cards to cutting-edge eSIM technology.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Standard SIM Cards</h3>
+                <p class="text-gray-600">Available in all form factors (Standard, Micro, and Nano) with customizable branding.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> High-quality materials</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Customizable branding</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> 2G/3G/4G/5G compatibility</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">eSIM Solutions</h3>
+                <p class="text-gray-600">Embedded SIM technology for remote provisioning and management.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Remote profile management</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Multiple operator profiles</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> GSMA-compliant</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">IoT SIM Cards</h3>
+                <p class="text-gray-600">Specialized SIM solutions for Internet of Things applications with extended durability.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Industrial temperature range</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Extended lifecycle</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Low power consumption</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NFC & RFID Cards Section -->
+    <section id="nfc-rfid" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <span class="text-primary font-medium mb-2 block">CONTACTLESS TECHNOLOGY</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">NFC & RFID Cards</h2>
+            <p class="text-gray-600 mb-6">Our NFC and RFID card solutions enable contactless communication for a wide range of applications including access control, identification, and payment systems.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">HF NFC Cards</h3>
+                <p class="text-gray-600">High-frequency (13.56 MHz) NFC cards compatible with ISO/IEC 14443 standards.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> ISO 14443A/B compliance</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> MIFARE technology options</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Various memory sizes</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">UHF RFID Cards</h3>
+                <p class="text-gray-600">Ultra-high frequency (860-960 MHz) RFID cards for long-range reading applications.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> EPC Class 1 Gen 2 compliance</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Read ranges up to 10 meters</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Anti-collision technology</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Dual Interface Cards</h3>
+                <p class="text-gray-600">Combined contact and contactless technology in a single card for maximum flexibility.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Contact & contactless operation</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Shared application data</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Advanced security features</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+          
+          <div class="relative" data-aos="fade-left">
+            <img src="https://images.pexels.com/photos/1109541/pexels-photo-1109541.jpeg" alt="NFC & RFID Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-wifi text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">Contactless Technology</p>
+                  <p class="text-sm text-gray-600">Fast & Secure Access</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ID Cards Section -->
+    <section id="id-cards" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 relative" data-aos="fade-right">
+            <img src="https://images.pexels.com/photos/3760778/pexels-photo-3760778.jpeg" alt="ID Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-id-card text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">Multi-Level Security</p>
+                  <p class="text-sm text-gray-600">Advanced Anti-Counterfeiting</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-1 lg:order-2" data-aos="fade-left">
+            <span class="text-primary font-medium mb-2 block">IDENTIFICATION SOLUTIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">ID & Access Cards</h2>
+            <p class="text-gray-600 mb-6">Our ID and access card solutions provide secure identification and access control for corporate, educational, and governmental applications with multiple security features.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Corporate ID Cards</h3>
+                <p class="text-gray-600">Secure employee identification cards with custom branding and multiple security features.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Custom graphic design</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Photo ID integration</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Multiple security layers</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Access Control Cards</h3>
+                <p class="text-gray-600">Smart cards with RFID technology for secure building and facility access control.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Compatible with major systems</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Multi-technology options</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Encryption capabilities</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Government ID Cards</h3>
+                <p class="text-gray-600">High-security identification cards for governmental and national ID applications.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Holographic overlays</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Microtext printing</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> UV-reactive features</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Loyalty Cards Section -->
+    <section id="loyalty-cards" class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div data-aos="fade-right">
+            <span class="text-primary font-medium mb-2 block">CUSTOMER ENGAGEMENT</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Loyalty & Gift Cards</h2>
+            <p class="text-gray-600 mb-6">Our loyalty and gift card solutions help businesses enhance customer engagement and implement effective rewards programs with stylish designs and secure technology.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Loyalty Program Cards</h3>
+                <p class="text-gray-600">Customizable cards for customer loyalty programs with magnetic stripe or chip options.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Custom brand designs</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Points tracking capability</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Multiple technology options</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Gift Cards</h3>
+                <p class="text-gray-600">Prepaid and reloadable gift cards for retail and hospitality businesses.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Seasonal design options</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Value loading capability</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Fraud prevention features</li>
+                </ul>
+              </div>
+              
+              <div class="bg-white p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Membership Cards</h3>
+                <p class="text-gray-600">Durable cards for clubs, associations, and membership organizations.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Long-lasting materials</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Personalization options</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Advanced printing techniques</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+          
+          <div class="relative" data-aos="fade-left">
+            <img src="https://images.pexels.com/photos/5699503/pexels-photo-5699503.jpeg" alt="Loyalty Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -right-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-award text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">Enhanced Engagement</p>
+                  <p class="text-sm text-gray-600">Customer Loyalty Solutions</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Healthcare Cards Section -->
+    <section id="healthcare-cards" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div class="order-2 lg:order-1 relative" data-aos="fade-right">
+            <img src="https://images.pexels.com/photos/4021775/pexels-photo-4021775.jpeg" alt="Healthcare Cards" class="w-full h-auto rounded-lg shadow-lg">
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-lg shadow-lg" data-aos="fade-up" data-aos-delay="200">
+              <div class="flex items-center">
+                <div class="mr-4">
+                  <i class="fas fa-heartbeat text-3xl text-primary"></i>
+                </div>
+                <div>
+                  <p class="font-bold text-gray-800">HIPAA Compliant</p>
+                  <p class="text-sm text-gray-600">Secure Patient Data</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="order-1 lg:order-2" data-aos="fade-left">
+            <span class="text-primary font-medium mb-2 block">MEDICAL SOLUTIONS</span>
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Healthcare Cards</h2>
+            <p class="text-gray-600 mb-6">Our healthcare card solutions provide secure access to medical information, insurance details, and patient identification with strict compliance to healthcare data protection regulations.</p>
+            
+            <div class="space-y-4 mb-8">
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Health Insurance Cards</h3>
+                <p class="text-gray-600">Secure cards for health insurance providers with advanced security features.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Tamper-evident features</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Digital verification options</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Compliance with regulations</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Medical ID Cards</h3>
+                <p class="text-gray-600">Smart cards containing critical patient medical information for emergency situations.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Emergency contact storage</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Medical condition alerts</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Allergy information</li>
+                </ul>
+              </div>
+              
+              <div class="bg-gray-50 p-4 rounded-lg shadow-sm">
+                <h3 class="font-bold mb-2">Hospital Access Cards</h3>
+                <p class="text-gray-600">Multi-function cards for healthcare staff providing secure facility access and identification.</p>
+                <ul class="mt-3 space-y-1">
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Staff identification</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Access control integration</li>
+                  <li class="flex items-center"><i class="fas fa-check text-primary mr-2"></i> Time tracking capabilities</li>
+                </ul>
+              </div>
+            </div>
+            
+            <a href="contact.html" class="btn-primary">Request Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product Features -->
+    <section class="py-16 bg-gray-50">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4" data-aos="fade-up">Key Features & Benefits</h2>
+          <p class="text-gray-600 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">All our card solutions are designed with these essential qualities to ensure maximum value and performance.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- Feature 1 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="150">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-shield-alt text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Advanced Security</h3>
+            <p class="text-gray-600">Our cards feature multiple layers of security including encryption, physical security elements, and tamper-evident features to prevent fraud and unauthorized access.</p>
+          </div>
+          
+          <!-- Feature 2 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="200">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-cogs text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Customization Options</h3>
+            <p class="text-gray-600">From graphic design to technical specifications, we offer extensive customization to create cards that perfectly match your brand identity and functional requirements.</p>
+          </div>
+          
+          <!-- Feature 3 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="250">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-medal text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Premium Quality</h3>
+            <p class="text-gray-600">We use high-quality materials and advanced manufacturing processes to ensure durability, reliability, and excellent performance throughout the card's lifecycle.</p>
+          </div>
+          
+          <!-- Feature 4 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="300">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-certificate text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Industry Compliance</h3>
+            <p class="text-gray-600">Our card solutions comply with relevant industry standards and regulations including ISO, EMV, PCI-DSS, HIPAA, and other sector-specific requirements.</p>
+          </div>
+          
+          <!-- Feature 5 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="350">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-leaf text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Eco-Friendly Options</h3>
+            <p class="text-gray-600">We offer sustainable card options made from recycled or biodegradable materials to help reduce environmental impact while maintaining high performance.</p>
+          </div>
+          
+          <!-- Feature 6 -->
+          <div class="bg-white p-6 rounded-lg shadow-sm" data-aos="fade-up" data-aos-delay="400">
+            <div class="w-14 h-14 bg-primary-light rounded-full flex items-center justify-center mb-4">
+              <i class="fas fa-headset text-xl text-primary"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Expert Support</h3>
+            <p class="text-gray-600">From initial consultation to ongoing technical support, our team of experts provides comprehensive assistance throughout your project lifecycle.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="py-20 bg-gradient-to-r from-primary to-secondary text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl md:text-4xl font-bold mb-6" data-aos="fade-up">Ready to Discuss Your Smart Card Needs?</h2>
+        <p class="text-xl mb-8 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Contact our team today to explore how our smart card solutions can meet your specific requirements and enhance your operations.</p>
+        <div class="flex flex-wrap justify-center gap-4" data-aos="fade-up" data-aos-delay="200">
+          <a href="contact.html" class="btn-white">Request a Quote</a>
+          <a href="services.html" class="btn-outline-white">Learn About Our Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white pt-16 pb-8">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <!-- Company Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">SecureCard Technologies</h3>
+          <p class="text-gray-400 mb-6">Leading manufacturer of smart cards, SIM cards, NFC cards, RFID cards, and banking cards with advanced security features.</p>
+          <div class="flex space-x-4">
+            <a href="#" class="text-white hover:text-accent transition-colors">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="#" class="text-white hover:text-accent transition-colors">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="text-white hover:text-accent transition-colors">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="text-white hover:text-accent transition-colors">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+        
+        <!-- Quick Links -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Quick Links</h3>
+          <ul class="space-y-3">
+            <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+            <li><a href="products.html" class="text-gray-400 hover:text-white transition-colors">Products</a></li>
+            <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors">Services</a></li>
+            <li><a href="blog.html" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+            <li><a href="contact.html" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+            <li><a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+          </ul>
+        </div>
+        
+        <!-- Products -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Our Products</h3>
+          <ul class="space-y-3">
+            <li><a href="products.html#banking-cards" class="text-gray-400 hover:text-white transition-colors">Banking Cards</a></li>
+            <li><a href="products.html#sim-cards" class="text-gray-400 hover:text-white transition-colors">SIM Cards</a></li>
+            <li><a href="products.html#nfc-rfid" class="text-gray-400 hover:text-white transition-colors">NFC & RFID Cards</a></li>
+            <li><a href="products.html#id-cards" class="text-gray-400 hover:text-white transition-colors">ID Cards</a></li>
+            <li><a href="products.html#loyalty-cards" class="text-gray-400 hover:text-white transition-colors">Loyalty Cards</a></li>
+          </ul>
+        </div>
+        
+        <!-- Contact Info -->
+        <div>
+          <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+          <ul class="space-y-3 text-gray-400">
+            <li class="flex items-start">
+              <i class="fas fa-map-marker-alt mt-1 mr-3 text-accent"></i>
+              <span>123 Tech Park, Silicon Valley, CA 94025, USA</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-phone-alt mr-3 text-accent"></i>
+              <span>+1 (555) 123-4567</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-envelope mr-3 text-accent"></i>
+              <span>info@securecardtech.com</span>
+            </li>
+            <li class="flex items-center">
+              <i class="fas fa-clock mr-3 text-accent"></i>
+              <span>Mon-Fri: 9:00 AM - 6:00 PM</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="border-t border-gray-800 pt-8">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <p class="text-gray-400 text-sm mb-4 md:mb-0">&copy; 2025 SecureCard Technologies. All rights reserved.</p>
+          <div class="flex space-x-6">
+            <a href="terms.html" class="text-gray-400 hover:text-white transition-colors text-sm">Terms of Service</a>
+            <a href="privacy-policy.html" class="text-gray-400 hover:text-white transition-colors text-sm">Privacy Policy</a>
+            <a href="sitemap.html" class="text-gray-400 hover:text-white transition-colors text-sm">Sitemap</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
